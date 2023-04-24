@@ -1,0 +1,24 @@
+#cannyon{
+    background-image: url(../imagens/GrandCanyon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#quadrado{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(138, 128, 128);
+    border-radius: 19px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#quadrado img{
+    width: 23%;
+}

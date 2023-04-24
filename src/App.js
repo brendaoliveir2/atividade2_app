@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+import Header from './Components/home'
+import Rodape from './Components/rodape'
+import Escocia from './Components/Escocia'
+import GrandCanyon from './Components/GrandCanyon'
+import Muralha from './Components/Muralha'
+import Aruba from './Components/Aruba'
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Router>
+      <Header />
+      <Routes>
+            <Route path='/' element={ <Header />} />
+            <Route path='/Escocia' element={ <Escocia />} />
+            <Route path='/GrandCanyon' element={ <GrandCanyon />} />
+            <Route path='/Muralha' element={ <Muralha />} />
+            <Route path='/Aruba' element={ <Aruba />} />
+      </Routes>
+      
+      <Rodape />
+    </Router>
+
   );
 }
 

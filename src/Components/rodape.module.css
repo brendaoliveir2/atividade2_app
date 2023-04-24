@@ -1,0 +1,17 @@
+#rodapé{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 0 auto;
+}
+
+#rodapé h3{
+    color:white;
+}
+
+#rodapé img{
+    width: 40px;
+    height: 40px;
+    margin:20px;
+}
